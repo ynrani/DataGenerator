@@ -1,0 +1,381 @@
+@import url("font-face.css");
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Arial'
+}
+.tdm-central {
+	min-height: 400px;
+}
+.thumbnail {
+	position: relative;
+	height: 325px;
+}
+.thumbnail.demand, .thumbnail.provision, .thumbnail.prepare, .thumbnail.admin, .thumbnail.design {
+	overflow: hidden;
+	height: 299px;
+	box-shadow: 0 3px 5px #cce1e8;
+}
+.thumbnail.demand:hover, .thumbnail.provision:hover, .thumbnail.prepare:hover, .thumbnail.admin:hover, .thumbnail.design:hover {
+	box-shadow: 0 3px 5px #85bdd8;
+	overflow: visible;
+	margin-bottom: 30px;
+}
+.thumbnail.demand {
+	background: url(../images/icon-demand.png) center 25px no-repeat #fafafa;
+}
+.thumbnail.demand:hover {
+	background: url(../images/icon-demand-hover.png) center 25px no-repeat #ffffff;
+	height: 425px;
+}
+.thumbnail.design {
+	background: url(../images/icon-design.png) center 25px no-repeat #fafafa;
+}
+.thumbnail.design:hover {
+	background: url(../images/icon-design-hover.png) center 25px no-repeat #ffffff;
+}
+.thumbnail.prepare {
+	background: url(../images/icon-prepare.png) center 25px no-repeat #fafafa;
+}
+.thumbnail.prepare:hover {
+	background: url(../images/icon-prepare-hover.png) center 25px no-repeat #ffffff;
+}
+.thumbnail.provision {
+	background: url(../images/icon-provision.png) center 25px no-repeat #fafafa;
+}
+.thumbnail.provision:hover {
+	background: url(../images/icon-provision-hover.png) center 25px no-repeat #ffffff;
+}
+.thumbnail.admin {
+	background: url(../images/icon-admin.png) center 25px no-repeat #fafafa;
+}
+.thumbnail.admin:hover {
+	background: url(../images/icon-admin-hover.png) center 25px no-repeat #ffffff;
+}
+.thumbnail h4 {
+	color: #b4b4b4;
+	font-size: 25px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-top: 130px;
+	padding-bottom: 225px;
+	position: absolute;
+	width: 85%;
+	margin: 0;
+	text-align: center;
+}
+.thumbnail h4:hover {
+	color: rgba(0,152,204,1);
+}
+.thumbnail p {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 175px;
+	color: rgba(134,134,134,0.8);
+}
+.thumbnail ul {
+	margin-top: 0;
+	padding-top: 0;
+	color: rgba(0,152,204,0.7);
+	position: absolute;
+}
+.thumbnail li {
+	list-style: none;
+	background: url(../images/bullet.png) 0 9px no-repeat;
+	margin-left: 20px;
+	padding-left: 15px;
+	line-height: 22px;
+}
+.thumbnail li:hover {
+	color: rgba(119,119,119,0.7);
+}
+.thumbnail li a {
+	color: rgba(0,152,204,0.7);
+	font-size: 14px;
+}
+.thumbnail li a:hover {
+	color: rgba(119,119,119,0.7);
+}
+.bottom-arrow {
+	position: absolute;
+	background: url(../images/thumbnail-bottom-arrow.png) no-repeat center #fafafa;
+	width: 100%;
+	height: 20px;
+	bottom: 0;
+	border-radius: 0 0 10px 10px;
+}
+.login-bg, .login-bg2 {
+	height: 500px;
+	width: 100%;
+}
+.login-bg {
+	background: url(../images/login-bg1.png) no-repeat center #7c7c7c;
+}
+.login-bg2 {
+	background: url(../images/login-bg2.png) no-repeat center #7c7c7c;
+}
+.login-container {
+	width: 265px;
+	padding: 20px;
+	height: 375px;
+	background: #fafafa;
+	float: right;
+	margin: 30px 0;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px #777;
+	position: relative;
+	text-align: center;
+}
+.top-blue-line {
+	width: 40%;
+	top: 0;
+	position: absolute;
+	left: 30%;
+	background: #0098cc;
+	height: 5px;
+}
+.login-container img {
+	margin-top: 5px;
+}
+.login-container h2 {
+	color: #b4b4b4;
+	text-transform: uppercase;
+	text-shadow: 0 1px 2px #FFF;
+	font-weight: normal;
+	margin: 0 0 25px;
+}
+.login-container input[type="text"], .login-container input[type="password"] {
+	width: 245px;
+	padding: 12px 10px;
+	font-style: italic;
+	margin-bottom: 15px;
+	border: 1px solid #ececec;
+	border-radius: 5px;
+	color: #CCC;
+}
+.login-container input[type="checkbox"] {
+	float: left;
+}
+.login-container label {
+	float: left;
+	font-size: 12px;
+	color: rgba(0,0,3,0.6);
+	padding-top: 2px;
+}
+.login-container .forgot-password {
+	color: #0098cc;
+	float: right;
+	font-size: 12px;
+	padding-top: 2px;
+}
+.login-btn {
+	background: #0098cc;
+	border-radius: 5px;
+	color: #FFF;
+	font-size: 16px;
+	font-family: 'HelveticaNeueLTStdRoman';
+	border: 0;
+	margin: 30px auto;
+	cursor: pointer;
+	padding: 10px 30px;
+	width:50px;
+}
+
+/************** Quick Link SHAHUL **************************/
+.quicklink-container {
+	height:55px;	
+	width:153px;
+	position:absolute;
+	z-index:9999;
+	display:block;
+	right:0;
+	margin-top:25px;
+	overflow:hidden;
+}
+.quicklink-container:hover {
+	height:277px;	
+	width:200px;
+	overflow:visible;	
+}
+.quicklink-sh {
+	background: #0098cc;
+float: right;
+color: #fff;
+border-radius: 10px 10px 0 0;
+}
+.quicklink-sh a {
+	color: #FFF;
+/*width: 100%;*/
+padding: 18px 38px 19px;
+float: left;
+}
+.quicklink-list {
+	display: block;
+background: #0098cc;
+clear: both;
+width: 100%;
+height: 216px;
+}
+.quicklink-list li a {
+	color: #fff;
+padding: 10px 8px 10px 20px;
+width: 172px;
+float: left;
+font-size: 14px;	
+}
+.quicklink-list li a:hover {
+	background:	#0186B3;
+}
+.advanced-search {
+	float: right;
+margin-right: 180px;
+margin-top: 43px;	
+}
+.advanced-search a {
+	color:#FFF;
+	text-decoration:underline;
+	font-size:13px;	
+}
+/* ********************** QUICK Link Navigation CSS START Here ********************************/
+/*```````````````````````.quick-link {
+	background: none;
+	margin-top: 24px;
+	width: 150px;
+}
+.quick-link > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+.dropdown-style {
+	position: absolute;
+	z-index: 9999;
+	width: 150px;
+}
+.dropdown a {
+	text-decoration: none;
+}
+.dropdown [data-toggle="dropdown"] {
+	display: block;
+	position: relative;
+	border: solid 1px transparent;
+	font-family: 'Open Sans', sans-serif;
+	padding: 18px 30px;
+	margin: 0;
+	outline: 0;
+	font-size: 1em;
+	text-decoration: none;
+	white-space: nowrap;
+	word-wrap: normal;
+	vertical-align: middle;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+	text-align: center;
+}
+.dropdown [data-toggle="dropdown"] {
+	color: #333;
+	background: #2c89c6;
+	border-radius: 10px 10px 0 0;
+}
+.dropdown [data-toggle="dropdown"]:hover {
+	background: #2c89c6;
+	border-radius: 10px 10px 0 0;
+}
+.dropdown .icon-arrow {
+	position: absolute;
+	display: block;
+	font-size: 0.6em;
+	color: #333;
+	top: 14px;
+	right: 10px;
+}
+.dropdown .icon-arrow.open {
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	-webkit-transition: -webkit-transform 0.6s;
+	-moz-transition: -moz-transform 0.6s;
+	-o-transition: -o-transform 0.6s;
+	transition: transform 0.6s;
+}
+.dropdown .icon-arrow.close {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: -webkit-transform 0.6s;
+	-moz-transition: -moz-transform 0.6s;
+	-o-transition: -o-transform 0.6s;
+	transition: transform 0.6s;
+}
+.dropdown .icon-arrow:before {
+/*content: '\25BC';*/
+/*}
+.dropdown .dropdown-menu {
+	max-height: 0;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	width: 200px;
+}
+.dropdown .dropdown-menu li {
+	padding: 0;
+}
+.dropdown .dropdown-menu li a {
+	display: block;
+	color: #FFF;
+	background: #2c89c6;
+	padding: 10px 10px 10px 20px;
+	font-size: 14px;
+}
+.dropdown .dropdown-menu li a:hover {
+	background: #1A79B6;
+}
+.dropdown .show, .dropdown .hide {
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+.dropdown .show {
+	display: block;
+	max-height: 9999px;
+	-webkit-transform: scaleY(1);
+	-moz-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	transform: scaleY(1);
+	animation: showAnimation 0.5s ease-in-out;
+	-moz-animation: showAnimation 0.5s ease-in-out;
+	-webkit-animation: showAnimation 0.5s ease-in-out;
+	-webkit-transition: max-height 1s ease-in-out;
+	-moz-transition: max-height 1s ease-in-out;
+	-o-transition: max-height 1s ease-in-out;
+	transition: max-height 1s ease-in-out;
+}
+.dropdown .hide {
+	max-height: 0;
+	-webkit-transform: scaleY(0);
+	-moz-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	transform: scaleY(0);
+	animation: hideAnimation 0.4s ease-out;
+	-moz-animation: hideAnimation 0.4s ease-out;
+	-webkit-animation: hideAnimation 0.4s ease-out;
+	-webkit-transition: max-height 0.6s ease-out;
+	-moz-transition: max-height 0.6s ease-out;
+	-o-transition: max-height 0.6s ease-out;
+	transition: max-height 0.6s ease-out;
+}
+
+/* ********************** QUICK Link Navigation CSS END Here ********************************/
+/********************************** Simple CSS Navigation for Quick Link ******************************/

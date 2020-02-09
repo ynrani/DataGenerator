@@ -1,0 +1,807 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Data Management</title>
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+ $(function() {
+     $("#tabs-1").tabs();
+  });
+</script>
+</head>
+
+<body>
+<header>
+  <div class="top-blue-nav"> 
+    <!--Primary Navigation Menu Start-->
+    <div class="container">
+      <div class="primary-nav">
+        <nav>
+          <ul>
+            <li><a href="index.html"><img src="images/home-icon.png" width="20" height="20" alt=""/> Home</a></li>
+            <li><a href="#"><img src="images/about-icon.png" width="20" height="20" alt=""/> About Us</a></li>
+            <li><a href="#"><img src="images/contact-icon.png" width="20" height="20" alt=""/> Contact Us</a></li>
+            <li><a href="login.html"><img src="images/logout-icon.png" width="20" height="20" alt=""/> Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="welcome">
+        <h5>Welcome Jones Johana</h5>
+      </div>
+      <div class="clearfloat">&nbsp;</div>
+    </div>
+    <!--Primary Navigation Menu Ends--> 
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <div class="logo"> 
+        <!--logo Start--> 
+        <img src="images/logo-cap.jpg" width="197" height="48" alt=""/> 
+        <!--logo Ends--> 
+      </div>
+      <div class="main-nav">
+        <nav>
+          <ul>
+            <li><a href="#">TDM Governance</a></li>
+            <li><a href="index.html" class="active">TDM Life Cycle</a></li>
+            <li><a href="#">Command Center</a></li>
+            <li><a href="#">Training</a></li>
+          </ul>
+        </nav>
+        </div>
+        <div class="clearfloat">&nbsp;</div>
+      
+    </div>
+  </div>
+  <div class="title-band">
+    <div class="container">
+      <div class="title">
+        <h3>TDM Central</h3>
+      </div>
+      <!-- Advanced Search Link -->
+      <div class="advanced-search"><a href="#">Advanced Search</a></div>
+      <!-- /Advanced Search Link --> 
+      <!-- Simple Navigation Menu for Quick Link -->
+      <div class="quicklink-container">
+        <div class="quicklink-sh"> <a href="#">Quick Link</a> </div>
+        <div class="quicklink-list">
+          <ul>
+            <li><a href="#">TD Generator</a></li>
+            <li><a href="#">Virtual University</a></li>
+            <li><a href="#">Auto Email</a></li>
+            <li><a href="#">LIVE</a></li>
+            <li><a href="tdm-find-test.html">Find Test Data</a></li>
+            <li><a href="#">TDM Architecture</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /Simple Navigation Menu for Quick Link -->
+      <div class="clearfloat">&nbsp;</div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <ol class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    /
+    <li><a href="index.html">TDM Life Cycle</a></li>
+    /
+    <li class="active">Find Test Data</li>
+  </ol>
+  <div class="content-main">
+    <div id="tabs-1">
+      <ul>
+        <li><a href="#tabs-1">Provider Search</a></li>
+        <li><a href="#tabs-2">Subscriber Search </a></li>
+        <li><a href="#tabs-3">Claims Search</a></li>
+        <li><a href="#tabs-4">Claims Freqency Search</a></li>
+      </ul>
+      <div id="tabs-1"> 
+        <!--Tabs 1 start -->
+        
+        <div class="two-col">
+          <table id="main-table">
+            <tr> 
+              <!--Left Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">Environment <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Environment</option>
+                        <option>TST 1</option>
+                        <option>Dev Region 1</option>
+                        <option>Dev Region 2</option>
+                        <option>Pre-Prod 1</option>
+                        <option>Pre-Prod 2</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Provider Categories <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Provider Categories</option>
+                        <option>Organization</option>
+                        <option>Ancillary</option>
+                        <option>Group Clinic</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Provider Speciality <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Provider Speciality</option>
+                        <option>VSP</option>
+                        <option>Accupuncture</option>
+                        <option>Acute Psychiatric Hospital</option>
+                        <option>Addiction Medicine</option>
+                        <option>Adolescent Medicine</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">State</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select State</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Zip code</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter 5 digit Zip code" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Gender</td>
+                    <td class="flied-title"><label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Male </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Female </label></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Effective Date</td>
+                    <td class="flied-title"><input id="from" name="from" class="date-control" type="text" placeholder="Select Effective Date" /></td>
+                  </tr>
+                </table></td>
+              <!--Left Side Form Ends Here-->
+              
+              <td class="table-gutter"></td>
+              
+              <!--Right Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td>Provider Type</td>
+                    <td><select class="down-control">
+                        <option>Select Provider Type</option>
+                        <option>Professional</option>
+                        <option>Facility</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Atypical Provider</td>
+                    <td class="flied-title"><label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                      </label></td>
+                  </tr>
+                  <tr>
+                    <td>Provider Contract</td>
+                    <td><select class="down-control">
+                        <option>Select Provider Contract</option>
+                        <option>Participating</option>
+                        <option>Non-Participating</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Country Code</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter 4 digit Country Code" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">EFT Provider</td>
+                    <td class="flied-title"><label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                      </label></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">License No <span>*</span></td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter Numeric Values" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Term Date</td>
+                    <td class="flied-title"><input id="to" name="to" class="date-control" type="text" placeholder="Select Term Date" value="" /></td>
+                  </tr>
+                </table>
+          </table>
+          </td>
+          <!--Right Side Form Ends Here-->
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" name="submit" class="btn-primary btn-cell" value="Search"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          
+          </table>
+          <div id="search-result">
+            <div class="show-result">Showing <strong>10</strong> of <strong>200</strong></div>
+            <p>Search Result for: <i>Professional + Ancillary + Accupuncture + Participating Provider</i></p>
+            <div class="clearfloat"></div>
+            
+          </div>
+          <div class="result-table">
+          <p class="info-text">Only 5 records are available for reservation</p>
+            <table class="table table-striped" border="0" cellpadding="0" cellspacing="0">
+              <colgroup>
+              <col class="col-xs-1">
+              <col class="col-xs-7">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    </label></th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Atypical</th>
+                  <th>Type</th>
+                  <th>Specialty</th>
+                  <th>Billing State</th>
+                  <th>Medicare ID</th>
+                  <th>License Number</th>
+                  <th>TIN</th>
+                  <th>NPI ID</th>
+                  <th>Contract</th>
+                  <th>Billing State</th>
+                  <th>EFT</th>
+                  <th>Gender</th>
+                  <th>Term Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    </label></td>
+                  <td>Dillon</td>
+                  <td>Cynthia</td>
+                  <td>No</td>
+                  <td>Professional</td>
+                  <td>Accupuncture</td>
+                  <td>TX</td>
+                  <td>123456</td>
+                  <td>F00081023</td>
+                  <td>850354356</td>
+                  <td>1619977527</td>
+                  <td>Par</td>
+                  <td>Texas</td>
+                  <td>Y</td>
+                  <td>Female</td>
+                  <td>1/21/2014</td>
+                </tr>
+                <tr>
+                  <td><label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    </label></td>
+                  <td>Dillon</td>
+                  <td>Cynthia</td>
+                  <td>No</td>
+                  <td>Professional</td>
+                  <td>Accupuncture</td>
+                  <td>TX</td>
+                  <td>123456</td>
+                  <td>F00081023</td>
+                  <td>850354356</td>
+                  <td>1619977527</td>
+                  <td>Par</td>
+                  <td>Texas</td>
+                  <td>Y</td>
+                  <td>Female</td>
+                  <td>1/21/2014</td>
+                </tr>
+                <tr>
+                  <td><label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    </label></td>
+                  <td>Dillon</td>
+                  <td>Cynthia</td>
+                  <td>No</td>
+                  <td>Professional</td>
+                  <td>Accupuncture</td>
+                  <td>TX</td>
+                  <td>123456</td>
+                  <td>F00081023</td>
+                  <td>850354356</td>
+                  <td>1619977527</td>
+                  <td>Par</td>
+                  <td>Texas</td>
+                  <td>Y</td>
+                  <td>Female</td>
+                  <td>1/21/2014</td>
+                </tr>
+                <tr>
+                  <td><label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    </label></td>
+                  <td>Dillon</td>
+                  <td>Cynthia</td>
+                  <td>No</td>
+                  <td>Professional</td>
+                  <td>Accupuncture</td>
+                  <td>TX</td>
+                  <td>123456</td>
+                  <td>F00081023</td>
+                  <td>850354356</td>
+                  <td>1619977527</td>
+                  <td>Par</td>
+                  <td>Texas</td>
+                  <td>Y</td>
+                  <td>Female</td>
+                  <td>1/21/2014</td>
+                </tr>
+                <tr>
+                  <td><label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    </label></td>
+                  <td>Dillon</td>
+                  <td>Cynthia</td>
+                  <td>No</td>
+                  <td>Professional</td>
+                  <td>Accupuncture</td>
+                  <td>TX</td>
+                  <td>123456</td>
+                  <td>F00081023</td>
+                  <td>850354356</td>
+                  <td>1619977527</td>
+                  <td>Par</td>
+                  <td>Texas</td>
+                  <td>Y</td>
+                  <td>Female</td>
+                  <td>1/21/2014</td>
+                </tr>
+                <tr>
+                  <td><label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    </label></td>
+                  <td>Dillon</td>
+                  <td>Cynthia</td>
+                  <td>No</td>
+                  <td>Professional</td>
+                  <td>Accupuncture</td>
+                  <td>TX</td>
+                  <td>123456</td>
+                  <td>F00081023</td>
+                  <td>850354356</td>
+                  <td>1619977527</td>
+                  <td>Par</td>
+                  <td>Texas</td>
+                  <td>Y</td>
+                  <td>Female</td>
+                  <td>1/21/2014</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <!--pagination footer Start-->
+          
+          <div id="page-nos">
+            <ul class="paginate pag1">
+              <li><a href="#">&#171;</a></li>
+              <li class="current">1</li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&#187;</a></li>
+              <br class="clearfloat">
+            </ul>
+          </div>
+          
+          <!--pagination footer Ends-->
+          
+          <hr>
+          <input type="button" name="submit" class="btn-primary btn-cell" value="Reserve">
+          <input type="button" name="submit" class="btn-primary btn-cell" value="Export to Excel">
+        </div>
+        
+        <!--Tabs 1 Ends --> 
+      </div>
+      <div id="tabs-2"> 
+        <!--Tabs 2 start -->
+        <div class="two-col">
+          <table id="main-table">
+            <tr> 
+              <!--Left Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">Environment <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Environment</option>
+                        <option>TST 1</option>
+                        <option>Dev Region 1</option>
+                        <option>Dev Region 2</option>
+                        <option>Pre-Prod 1</option>
+                        <option>Pre-Prod 2</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Gender</td>
+                    <td class="flied-title"><label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Male </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Female </label></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">State</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select State</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Age</td>
+                    <td><select class="down-control">
+                        <option>Select Age</option>
+                        <option>15-25</option>
+                        <option>25-35</option>
+                        <option>35-45</option>
+                        <option>45-55</option>
+                        <option>55-65</option>
+                        <option>65-75</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">LOB</td>
+                    <td><select class="down-control">
+                        <option>Select LOB</option>
+                        <option>Medicaid</option>
+                        <option>Medicare</option>
+                        <option>PPO</option>
+                        <option>HMO</option>
+                        <option>Non-HMO</option>
+                        <option>Medicare Advantage</option>
+                      </select></td>
+                  </tr>
+                </table></td>
+              <!--Left Side Form Ends Here-->
+              
+              <td class="table-gutter"></td>
+              
+              <!--Right Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">Subscriber Type <span>*</span></td>
+                    <td><select class="down-control">
+                        <option>Select Subscriber Type</option>
+                        <option>Subscriber</option>
+                        <option>Dependent - Spouse</option>
+                        <option>Dependent - Child</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td>Status</td>
+                    <td><select class="down-control">
+                        <option>Select Status</option>
+                        <option>Active</option>
+                        <option>Re-instated</option>
+                        <option>Re-enrolled</option>
+                        <option>In Actve</option>
+                        <option>Deliquent</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Zip code</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter 5 digit Zip code" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">With COB</td>
+                    <td class="flied-title"><label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                      </label></td>
+                  </tr>
+                  <tr height="49">
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+          </table>
+          </td>
+          <!--Right Side Form Ends Here-->
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" name="submit" class="btn-primary btn-cell" value="Search"></td>
+          </tr>
+          </table>
+        </div>
+        <!--Tabs 2 ends --> 
+      </div>
+      <div id="tabs-3"> 
+        <!--Tabs 3 start -->
+        <div class="two-col">
+          <table id="main-table">
+            <tr> 
+              <!--Left Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">Environment <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Environment</option>
+                        <option>TST 1</option>
+                        <option>Dev Region 1</option>
+                        <option>Dev Region 2</option>
+                        <option>Pre-Prod 1</option>
+                        <option>Pre-Prod 2</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Claim Type <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Claim Type</option>
+                        <option>Professional</option>
+                        <option>Facility</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">CPT Code</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter CPT Code"></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Claim Status</td>
+                    <td><select class="down-control">
+                        <option>Select Claim Status</option>
+                        <option>Paid</option>
+                        <option>Denied</option>
+                        <option>Pend</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Claim Source</td>
+                    <td><select class="down-control">
+                        <option>Select Claim Source</option>
+                        <option>EDI</option>
+                        <option>Paper</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Group Number</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter Group Number"></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Gender</td>
+                    <td class="flied-title"><label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Male </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Female </label></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Pend Edit Code</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter Pend Edit Code"></td>
+                  </tr>
+                </table></td>
+              <!--Left Side Form Ends Here-->
+              
+              <td class="table-gutter"></td>
+              
+              <!--Right Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">DX Code <span>*</span></td>
+                    <td><input class="form-control" type="text" name="Job Title" placeholder="Enter DX Code"></td>
+                  </tr>
+                  <tr>
+                    <td>Provider NPI</td>
+                    <td><input class="form-control" type="text" name="Job Title" placeholder="Enter Provider NPI"></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">POS</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter POS" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Modifier</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter Modifier" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Type of Service</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter Type of Service" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Revenue Code</td>
+                    <td class="flied-title"><input class="form-control" type="text" name="Job Title" placeholder="Enter Revenue Code" /></td>
+                  </tr>
+                  <tr height="49">
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flied-title" colspan="2"><label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        With COB</label>
+                      <span class="check-space"></span>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        Auth on Claim </label>
+                      <span class="check-space"></span>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        Interest on claim</label></td>
+                  </tr>
+                </table>
+          </table>
+          </td>
+          <!--Right Side Form Ends Here-->
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" name="submit" class="btn-primary btn-cell" value="Search"></td>
+          </tr>
+          </table>
+        </div>
+        <!--Tabs 3 ends --> 
+      </div>
+      <div id="tabs-4"> 
+        <!--Tabs 4 start -->
+        <div class="two-col">
+          <table id="main-table">
+            <tr> 
+              <!--Left Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">Environment <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Environment</option>
+                        <option>TST 1</option>
+                        <option>Dev Region 1</option>
+                        <option>Dev Region 2</option>
+                        <option>Pre-Prod 1</option>
+                        <option>Pre-Prod 2</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Categories <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Categories</option>
+                        <option>SURGICAL_PROCEDURE_CODE</option>
+                        <option>GROUP_SET</option>
+                        <option>PRICING_LIMIT_TYPE</option>
+                        <option>PROVIDER_ID</option>
+                        <option>PRICING_FILE_LEVEL1</option>
+                        <option>PRICING_FILE_LEVEL2</option>
+                        <option>PRICING_FILE_LEVEL3</option>
+                        <option>PRICING_FILE_LEVEL4</option>
+                        <option>PLACE_OF_sERVICE</option>
+                        <option>TYPE_OF_SERVICE</option>
+                        <option>PAYEE_CODE</option>
+                        <option>GROUP_NUMBER</option>
+                        <option>Procedure code</option>
+                        <option>Diagnosis Code</option>
+                      </select></td>
+                  </tr>
+                </table></td>
+              <!--Left Side Form Ends Here-->
+              
+              <td class="table-gutter"></td>
+              
+              <!--Right Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td>Pull Top</td>
+                    <td><select class="down-control">
+                        <option>Select Pull Top</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>25</option>
+                        <option>50</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Category combination</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Category Combination</option>
+                        <option>Diagnosis_code and Revenue_Code</option>
+                        <option>Diagnosis_code and Type of Bill</option>
+                        <option>Diagnosis_code and Pricing_limit_type </option>
+                        <option>Pricing_Limit_Type and Revenue_Code </option>
+                        <option>Procedure_Code and Diagnisis_Code </option>
+                      </select></td>
+                  </tr>
+                </table>
+          </table>
+          </td>
+          <!--Right Side Form Ends Here-->
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" name="submit" class="btn-primary btn-cell" value="Search"></td>
+          </tr>
+          </table>
+        </div>
+        <!--Tabs 4 ends --> 
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo"><img src="images/cap-logo.jpg" width="151" height="36" alt=""/></div>
+    <div class="footer-txt">
+      <p>Copyright &copy; 2015 · All rights reserved</p>
+    </div>
+    <div class="clearfloat">&nbsp;</div>
+  </div>
+</footer>
+<script type="text/javascript">
+
+  
+ $(function() {
+    $( "#from" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      onClose: function( selectedDate ) {
+        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      onClose: function( selectedDate ) {
+        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  }); 
+
+$(".table tr:odd").css('background-color','#ffffff');
+$(".table tr:even").addClass('even');
+
+
+$(function() {
+$('[placeholder]').focus(function() {
+  var input = $(this);
+  if (input.val() == input.attr('placeholder')) {
+    input.val('');
+    input.removeClass('placeholder');
+  }
+}).blur(function() {
+  var input = $(this);
+  if (input.val() == '' || input.val() == input.attr('placeholder')) {
+    input.addClass('placeholder');
+    input.val(input.attr('placeholder'));
+  }
+}).blur().parents('form').submit(function() {
+  $(this).find('[placeholder]').each(function() {
+    var input = $(this);
+    if (input.val() == input.attr('placeholder')) {
+      input.val('');
+    }
+  })
+});
+});
+</script>
+</body>
+</html>

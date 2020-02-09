@@ -1,0 +1,309 @@
+<!--
+Author: Admin
+Company: Capgemini
+Date 16 Apr 2015
+Title: Test Data Generator HTML file
+  -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Data Generator</title>
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link rel="stylesheet" type="text/css" href="css/tdg.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+ $(function() {
+     $("#tabs-1").tabs();
+  });
+</script>
+</head>
+
+<body>
+<header>
+  <div class="top-blue-nav"> 
+    <!--Primary Navigation Menu Start-->
+    <div class="container">
+      <div class="primary-nav">
+        <nav>
+          <ul>
+            <li><a href="index.html"><img src="images/home-icon.png" width="20" height="20" alt=""/> Home</a></li>
+            <li><a href="#"><img src="images/about-icon.png" width="20" height="20" alt=""/> About Us</a></li>
+            <li><a href="#"><img src="images/contact-icon.png" width="20" height="20" alt=""/> Contact Us</a></li>
+            <li><a href="login.html"><img src="images/logout-icon.png" width="20" height="20" alt=""/> Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="welcome">
+        <h5>Welcome Jones Johana</h5>
+      </div>
+      <div class="clearfloat">&nbsp;</div>
+    </div>
+    <!--Primary Navigation Menu Ends--> 
+  </div>
+  <div class="navigation">
+    <div class="container">
+      <div class="logo"> 
+        <!--logo Start--> 
+        <img src="images/logo-cap.jpg" width="197" height="48" alt=""/> 
+        <!--logo Ends--> 
+      </div>
+      <div class="main-nav">
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Data Board</a></li>
+            <li><a href="tdg-dashboard.html" >My Dashboard</a></li>	
+          </ul>
+        </nav>
+        </div>
+        <div class="clearfloat">&nbsp;</div>
+      
+    </div>
+  </div>
+  <div class="title-band">
+    <div class="container">
+      <div class="title">
+        <h3>Test Data Generator</h3>
+      </div>
+      <!-- Advanced Search Link -->
+      <div class="advanced-search"><input class="form-control search-control" type="text" name="rows" placeholder="" />
+     
+      </div>
+      <!-- /Advanced Search Link --> 
+      <div class="clearfloat">&nbsp;</div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  
+  <div class="content-main">
+    <div id="tabs-1">
+      <ul>
+        <li><a href="#tabs-1">Schema 1 </a></li>
+        <li><a href="#tabs-2">Schema 2 </a></li>
+        <li><a href="#tabs-3">Schema 3</a></li>
+        <li><a href="#tabs-4">Schema 4</a></li>
+      </ul>
+      <div id="tabs-1"> 
+        <!--Tabs 1 start -->
+        
+        <div class="two-col">
+          <table id="main-table">
+            <tr> 
+              <!--Left Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">No. of rows populated <span>*</span></td>
+                    <td class="flied-title"><input class="form-control" type="text" name="rows" placeholder="Enter number" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Account Type <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Account Type</option>
+                        <option>Savings</option>
+                        <option>Current</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">State</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select State</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">City</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select City</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                   <tr>
+                    <td class="lable-title">Region</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Region</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Gender</td>
+                    <td class="flied-title"><label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Male </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Female </label></td>
+                  </tr>
+                </table></td>
+              <!--Left Side Form Ends Here-->
+              
+              <td class="table-gutter"></td>
+              
+              <!--Right Side Form Start Here-->
+              <td><table id="form-set">
+                  <tr>
+                    <td class="lable-title">No. of rows populated <span>*</span></td>
+                    <td class="flied-title"><input class="form-control" type="text" name="rows" placeholder="Enter number" /></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Account Type <span>*</span></td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Account Type</option>
+                        <option>Savings</option>
+                        <option>Current</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">State</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select State</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">City</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select City</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                   <tr>
+                    <td class="lable-title">Region</td>
+                    <td class="flied-title"><select class="down-control">
+                        <option>Select Region</option>
+                        <option>Illinois</option>
+                        <option>Montana</option>
+                        <option>New Mexico</option>
+                        <option>Oklahoma</option>
+                        <option>Texas</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="lable-title">Gender</td>
+                    <td class="flied-title"><label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Male </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        Female </label></td>
+                  </tr>
+                </table>
+          </table>
+          </td>
+          <!--Right Side Form Ends Here-->
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" name="generateData" class="btn-primary btn-cell" value="Generate Data"></td>
+            <td colspan="2"><input type="button" name="reset" class="btn-primary btn-cell" value="Reset"></td>
+          </tr>
+        
+          </table>
+        </div>
+        
+        <!--Tabs 1 Ends --> 
+      </div>
+      <div id="tabs-2"> 
+        <!--Tabs 2 start -->
+        <div class="two-col">
+          <table id="main-table">
+          <p>Schema 2</p>
+           
+                </table>
+          </table>
+          </td>
+          <!--Right Side Form Ends Here-->
+          </tr>
+         
+          <tr>
+            <td colspan="2"><input type="button" name="submit" class="btn-primary btn-cell" value="Search"></td>
+          </tr>
+          </table>
+        </div>
+        <!--Tabs 2 ends --> 
+      </div>
+      <div id="tabs-3"> 
+        <!--Tabs 3 start -->
+        <div class="two-col">
+          <table id="main-table">
+          <p>Schema 3</p>
+           
+          </table>
+        </div>
+        <!--Tabs 3 ends --> 
+      </div>
+      <div id="tabs-4"> 
+        <!--Tabs 4 start -->
+        <div class="two-col">
+          <table id="main-table">
+          <p>Schema 4</p>
+ 
+          </table>
+        </div>
+        <!--Tabs 4 ends --> 
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo"><img src="images/cap-logo.jpg" width="151" height="36" alt=""/></div>
+    <div class="footer-txt">
+      <p>Copyright &copy; 2015 · All rights reserved</p>
+    </div>
+    <div class="clearfloat">&nbsp;</div>
+  </div>
+</footer>
+<script type="text/javascript">
+
+$(function() {
+$('[placeholder]').focus(function() {
+  var input = $(this);
+  if (input.val() == input.attr('placeholder')) {
+    input.val('');
+    input.removeClass('placeholder');
+  }
+}).blur(function() {
+  var input = $(this);
+  if (input.val() == '' || input.val() == input.attr('placeholder')) {
+    input.addClass('placeholder');
+    input.val(input.attr('placeholder'));
+  }
+}).blur().parents('form').submit(function() {
+  $(this).find('[placeholder]').each(function() {
+    var input = $(this);
+    if (input.val() == input.attr('placeholder')) {
+      input.val('');
+    }
+  })
+});
+});
+</script>
+</body>
+</html>

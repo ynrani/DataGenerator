@@ -1,0 +1,44 @@
+/****************
+Author: Admin
+Company: Capgemini
+Date 16 Apr 2015
+Title: Custom Test Data Generator CSS file
+***************/
+#g-search-btn {
+	display: inline-block;
+	position: relative;
+	height: 25px;
+}
+
+.search-control {
+	display: inline-block;
+	height: 29px;
+	width: 100%;
+	margin: 0;
+	padding: 0 6px 0 32px;
+	border: none;
+	color: #aab4b9;
+	background-color: #465a64;
+	background-image:
+		url(https://www.capgemini.com/sites/all/themes/capgemini/images/loupe-search-white.png);
+	background-position: 10px center;
+	background-repeat: no-repeat;
+}
+.table-striped{
+	font-size: 13px;
+}
+.download-btn{
+	 height: 20px;
+  width: 20px;
+  background-image: url("../images/b2.png");
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+.download-btn:hover{
+	background-image: url("../images/b1.png")
+}
+.table>tbody>tr>td:first-child, .table>tbody>tr>td:last-child{
+	text-align: center;
+	}

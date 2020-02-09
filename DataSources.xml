@@ -1,0 +1,24 @@
+            <datasources>
+                <datasource jta="true" jndi-name="java:jboss/datasources/tdmUserDS" pool-name="OracleDS1" enabled="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:oracle:thin:@IN-PNQ-COE09:1521:xe</connection-url>
+                    <driver>oracle</driver>
+                    <security>
+                        <user-name>USRES</user-name>
+                        <password>usres</password>
+                    </security>
+                </datasource>
+                <datasource jta="true" jndi-name="java:jboss/datasources/tdgPersistenceUnit" pool-name="OracleDS2" enabled="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:oracle:thin:@IN-PNQ-COE09:1521:xe</connection-url>
+                    <driver>oracle</driver>
+                    <security>
+                        <user-name>TDG</user-name>
+                        <password>tdg</password>
+                    </security>
+                </datasource>
+                <drivers>
+                    <driver name="oracle" module="com.oracle.jdbc">
+                        <driver-class>oracle.jdbc.OracleDriver</driver-class>
+                        <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+                    </driver>
+                </drivers>
+            </datasources>
